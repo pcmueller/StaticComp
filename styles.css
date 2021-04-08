@@ -1,0 +1,92 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  display: grid;
+  grid-template-rows: 33% 66%;
+  height: 15vh;
+  width: 100%;
+  background-color: rgb(43, 43, 43);
+}
+
+main {
+  border: 1px black dashed;
+  height: 100vh;
+  height: 100%;
+
+  background-color: #EFEFEF;
+}
+
+.username-menu {
+  justify-self: flex-end;
+  margin: 1%;
+  color: #37B5FE;
+}
+
+.nav-bar {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  width: 100%;
+}
+
+.nav-bar-links li {
+  display: inline-block;
+  border: 1px solid #2A7195;
+  padding: 1% 2% 1% 7%;
+  margin: 1% 1% 1% 0;
+  color: rgb(148, 148, 148);
+}
+
+.nav-bar-logo {
+  color: #FFFFFF;
+  font-size: 3vw;
+  align-self: center;
+  justify-self: flex-end;
+  margin: 5% 5% 5% 0;
+}
+
+.main-wrapper {
+  width: 98%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.box-grid-title {
+  border: 1px dashed orange;
+  height: 9vw;
+  color: #4D4D4D;
+}
+
+.box-grid {
+  border: 1px dashed;
+  display: grid;
+  grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
+  grid-column-gap: 0.5%;
+  grid-row-gap: 0.9em;
+  width: 100%;
+  align-self: center;
+  justify-items: center;
+}
+
+.box {
+  width: 23vw;
+  height: 33vw;
+  border: 1px dashed blue;
+  color: #FFFFFF;
+}
