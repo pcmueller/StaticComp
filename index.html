@@ -4,13 +4,17 @@
   <link rel='stylesheet' href='./styles.css'>
   <meta charset='UTF-8'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ca77517a12.js" crossorigin="anonymous"></script>
   <title>Static Comp</title>
 </head>
   <body>
     <header>
       <article class="username-menu">
         <div>
-          <label for="username">Admin Username</label>
+          <label for="username"><i class="fas fa-ghost"></i></i>admin username</label>
           <select name="username">
             <option value="admin1"></option>
             <option value="admin2"></option>
@@ -21,25 +25,60 @@
       </article>
       <nav class="nav-bar">
         <ul class="nav-bar-links"> 
-          <li>SHARES</li>
-          <li>PLAYLISTS</li>
-          <li>PERSONAL VIDEOS</li>
+          <li class="active">
+            <i class="fas fa-book-dead"></i>
+            <p>COLLECTION</p>
+          </li>
+          <li class="inactive">
+            <i class="fas fa-hat-wizard"></i>
+            <p>PLAYLISTS</p>
+          </li>
+          <li class="inactive">
+            <i class="fas fa-hand-sparkles"></i>
+            <p>COMMUNITY</p>
+          </li>
         </ul>
-        <p class="nav-bar-logo">LOGO</p>
+        <span class="nav-bar-logo">
+          <img class="sword-logo" src="./assets/sword-logo-2.png">
+        </span>
       </nav>
     </header>
     <main>
       <div class="main-wrapper">
-        <h1 class="box-grid-title">Shares</h1>
+        <p class="box-grid-title">Collection</p>
         <section class="box-grid">
-          <article class="box">1</article>
-          <article class="box">2</article>
-          <article class="box">3</article>
-          <article class="box">4</article>
-          <article class="box">5</article>
-          <article class="box">6</article>
-          <article class="box">7</article>
-          <article class="box">8</article>
+          <article class="box">
+            <span class="box-top"></span>
+            <p class="box-bottom"></p>
+          </article>
+          <article class="box">
+            <span class="box-top"></span>
+            <p class="box-bottom"></p>
+          </article>
+          <article class="box">
+            <span class="box-top"></span>
+            <p class="box-bottom"></p>
+          </article>
+          <article class="box">
+            <span class="box-top"></span>
+            <p class="box-bottom"></p>
+          </article>
+          <article class="box">
+            <span class="box-top"></span>
+            <p class="box-bottom"></p>
+          </article>
+          <article class="box">
+            <span class="box-top"></span>
+            <p class="box-bottom"></p>
+          </article>
+          <article class="box">
+            <span class="box-top"></span>
+            <p class="box-bottom"></p>
+          </article>
+          <article class="box">
+            <span class="box-top"></span>
+            <p class="box-bottom"></p>
+          </article>
         </section>
       </div>
     </main>
