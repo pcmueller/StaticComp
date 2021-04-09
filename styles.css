@@ -1,92 +1,166 @@
-html,
-body {
+html {
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 
 body {
-  height: 100vh;
+  height: 175vh;
   width: 100vw;
-}
-
-main {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Abril Fatface',
+  cursive;
 }
 
 header {
   display: grid;
   grid-template-rows: 33% 66%;
-  height: 15vh;
-  width: 100%;
-  background-color: rgb(43, 43, 43);
+  height: 10%;
+  padding: 1% 1% 2% 0;
+  /* background: linear-gradient(to left, #333, #333 20%, rgb(111, 107, 107) 50%, rgb(181, 178, 178) 90%); */
+  background-image: url(assets/space-2.jpeg);
+  border-bottom: 0.5em solid rgba(251, 75, 225, 0.667)
 }
 
 main {
-  border: 1px black dashed;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
   height: 100%;
+  border-top: 2px solid rgb(24, 40, 40, 0.5);
+  /* width: 100vw; */
+  /* width: 100%; */
+  background: linear-gradient(to right, rgb(33, 32, 32), rgb(60, 67, 96) 30%, rgb(73, 98, 152) 50%, rgb(45, 176, 245, 0.8) 70%);
+  /* background-image: url(assets/space-2.jpeg); */
+  /* background-repeat: no-repeat; */
+}
 
-  background-color: #EFEFEF;
+select {
+  margin-left: 5%;
 }
 
 .username-menu {
+  width: 12em;
   justify-self: flex-end;
-  margin: 1%;
+  align-self: center;
+  /* margin: 1% 1% 0 0; */
+  padding: 0.5% 0 0.75% 1.5%;
+  font-size: 1.5vw;
   color: #37B5FE;
+  background-color:rgba(73, 98, 152, 0.4)
 }
 
 .nav-bar {
   display: grid;
   grid-template-columns: 75% 25%;
   width: 100%;
+  /* height: 100%; */
+  padding: 0;
+}
+
+.nav-bar-links {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 1%;
+  margin: 0 0 0 2%;
 }
 
 .nav-bar-links li {
-  display: inline-block;
-  border: 1px solid #2A7195;
-  padding: 1% 2% 1% 7%;
-  margin: 1% 1% 1% 0;
-  color: rgb(148, 148, 148);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-self: flex-start;
+  justify-content: space-evenly;
+  align-self: center;
+  align-items: center;
+  width: 13vw;
+  height: 3vw;
+  padding: 0 1% 0 1%;
+  margin: 1% 1% 0 0;
+  border: 0.1em solid #37B5FE;
+  color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(157, 140, 251, 0.407);
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+
+i {
+  margin-right: 5%;
 }
 
 .nav-bar-logo {
-  color: #FFFFFF;
-  font-size: 3vw;
-  align-self: center;
+  /* background-image: url(assets/sword-logo-2.png); */
   justify-self: flex-end;
-  margin: 5% 5% 5% 0;
+  align-self: center;
+  margin: 0 2% 5% 0;
+  font-size: 3em;
+}
+
+.sword-logo {
+  width: 4em;
+  height: 3em;
 }
 
 .main-wrapper {
-  width: 98%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  width: 94%;
+  height: 100%;
 }
 
 .box-grid-title {
-  border: 1px dashed orange;
-  height: 9vw;
-  color: #4D4D4D;
+  display: flex;
+  align-items: center;
+  height: 6vw;
+  margin: 3% 0 3% 0;
+  font-size: 6vw;
+  font-weight: bold;
+  font-family: 'Alex Brush',
+  cursive;
+  color: #62f252;
 }
 
 .box-grid {
-  border: 1px dashed;
   display: grid;
-  grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
-  grid-column-gap: 0.5%;
-  grid-row-gap: 0.9em;
-  width: 100%;
-  align-self: center;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-column-gap: 1.4%;
+  grid-row-gap: 1.4%;
   justify-items: center;
+  align-content: flex-start;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2%;
 }
 
 .box {
+  display: flex;
+  flex-direction: column;
   width: 23vw;
   height: 33vw;
-  border: 1px dashed blue;
-  color: #FFFFFF;
+  border-radius: 3px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+  0.3em 0.3em 0.3em 0.1em rgba(0, 0, 0, 0.2),
+  0.5em 0.5em 0.5em 0.2em rgba(0, 0, 0, 0.2);
+
 }
+
+.box-top {
+  height: 35vh;
+  border-radius: 3px 3px 0 0;
+  background-color: rgba(51, 62, 133, 0.6)
+}
+
+.box-bottom {
+  height: 65vh;
+  border-radius: 0 0 3px 3px;
+  background-color: rgba(242, 233, 233, 0.948);
+  margin: 0;
+}
+
+/* .inactive {
+  color: rgb(243, 7, 155);
+}
+
+.active {
+  color: #FFFFFF;
+} */
