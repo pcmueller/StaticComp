@@ -20,7 +20,7 @@ header {
   padding: 1% 1% 2% 0;
   /* background: linear-gradient(to left, #333, #333 20%, rgb(111, 107, 107) 50%, rgb(181, 178, 178) 90%); */
   background-image: url(assets/space-2.jpeg);
-  border-bottom: 0.5em solid rgba(251, 75, 225, 0.667)
+  border-bottom: 0.5em solid rgba(251, 75, 225, 0.541)
 }
 
 main {
@@ -46,8 +46,8 @@ select {
   /* margin: 1% 1% 0 0; */
   padding: 0.5% 0 0.75% 1.5%;
   font-size: 1.2vw;
-  color: #3c9affc3;
-  background-color:rgba(73, 98, 152, 0.195)
+  color: #ffffffa1;
+  background-color:rgba(73, 98, 152, 0.726)
 }
 
 .nav-bar {
@@ -96,8 +96,8 @@ i {
 }
 
 .logo {
-  width: 3em;
-  height: 2.6em;
+  width: 40%;
+  height: 40%;
 }
 
 .main-wrapper {
