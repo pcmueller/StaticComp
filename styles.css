@@ -1,14 +1,14 @@
 html {
   height: 100%;
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 }
 
 body {
   height: 175vh;
   width: 100vw;
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   font-family: 'Open Sans',
   sans-serif;
 }
@@ -17,9 +17,9 @@ header {
   display: grid;
   grid-template-rows: 33% 66%;
   height: 18vw;
-  padding: 0 1% 0 0;
+  padding-right: 1%;
   /* background: linear-gradient(to left, #333, #333 20%, rgb(111, 107, 107) 50%, rgb(181, 178, 178) 90%); */
-  background-image: url(assets/space-2.jpeg);
+  background-image: url(assets/backgrounds/space-2.jpeg);
   border-bottom: 0.5em solid rgba(47, 128, 179, 0.699)
 }
 
@@ -37,7 +37,7 @@ main {
 
 select {
   margin-left: 5%;
-  margin-right: 0;
+  /* margin-right: 0; */
   width: 1.5vw;
   height: 1.5vw;
 }
@@ -64,7 +64,7 @@ select {
   width: 100%;
   height: 100%;
   /* margin: 2% 1% 2% 0; */
-  padding: 0 0 2% 0;
+  padding-bottom: 2%;
 }
 
 .nav-bar-links {
@@ -104,7 +104,7 @@ i {
   align-self: flex-end;
   max-width: 30vw;
   max-height: 100%;
-  padding: 0 1vw 0;
+  padding-right: 1vw;
   /* font-size: 2em; */
 }
 
@@ -186,10 +186,11 @@ i {
 .box-bottom {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 65vh;
   border-radius: 0 0 3px 3px;
-  background-color: rgba(255, 255, 255, 0.93);
-  margin: 0;
+  background-color: rgba(228, 248, 254, 0.941);
+  padding: 1.5vw;
 }
 
 .arrow {
@@ -202,15 +203,15 @@ i {
 .plays-box {
   flex-direction: column;
   margin: 3% 3% 1% 2%;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  align-items: center;
 }
 
 .plays-title {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 0;
+  /* margin: 0; */
   font-size: 1vw;
   color: #ffffffa1;
 }
@@ -219,12 +220,114 @@ i {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 0;
+  /* margin: 0; */
   font-size: 3vw;
-  color: #ace6f0c2;
+  color: #d6deefe0;
+}
+
+.album-header {
+  justify-content: center;
+}
+
+.album-title {
+  font-size: 1.5vw;
+  color:rgba(0, 0, 0, 0.76);
+  margin-bottom: 0.5vw;
+}
+
+.artist-name {
+  font-size: 1.25vw;
+  color: rgba(0, 0, 0, 0.633)
+}
+
+.link-box {
+  height: 3vw;
+  font-size: 0.9vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:rgba(0, 0, 0, 0.493);
+  background-color:rgba(0, 0, 0, 0.096);
+  padding: 0.75vw;
+}
+
+.release-date {
+  justify-content: center;
+}
+
+.date-title {
+  font-size: 1vw;
+  margin-bottom: 0.25vw;
+}
+
+.date-num {
+  font-size: 1.5vw;
+  color:rgba(0, 0, 0, 0.934)
+}
+
+.active-listeners {
+  justify-content: center;
+}
+
+.listeners-title {
+  font-size: 1vw;
+  margin-bottom: 0.25vw;
+}
+
+.listeners-num {
+  font-size: 2vw;
+  color: rgba(54, 113, 201, 0.804)
 }
 
 .active {
   /* color: #3ee668d6; */
   color: #ffffff;
+}
+
+.album-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url(assets/albums/black-sabbath-1970.png);
+  background-size: cover;
+}
+
+.album-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/albums/reign-in-blood-1986.png);
+  background-size: cover;
+}
+
+.album-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/albums/master-of-puppets-1986.png);
+  background-size: cover;
+}
+
+.album-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/albums/dopethrone-2000.png);
+  background-size: cover;
+}
+
+.album-5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/albums/crimson-king-1969.png);
+  background-size: cover;
+}
+
+.album-6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/albums/south-of-heaven-1988.png);
+  background-size: cover;
+}
+
+.album-7 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/albums/paranoid-1970.png);
+  background-size: cover;
+}
+
+.album-8 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/albums/ride-the-lightning-1984.png);
+  background-size: cover;
 }

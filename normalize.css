@@ -122,6 +122,15 @@ samp {
 }
 
 /**
+ * Remove margin from paragraph elements.
+ */
+
+p {
+  margin: 0;
+}
+
+
+/**
  * Add the correct font size in all browsers.
  */
 
