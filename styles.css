@@ -1,14 +1,12 @@
+/** main sections **/
+
 html {
   height: 100%;
-  /* margin: 0;
-  padding: 0; */
 }
 
 body {
-  height: 175vh;
+  height: 200vh;
   width: 100vw;
-  /* margin: 0;
-  padding: 0; */
   font-family: 'Open Sans',
   sans-serif;
 }
@@ -17,8 +15,6 @@ header {
   display: grid;
   grid-template-rows: 33% 66%;
   height: 18vw;
-  padding-right: 1%;
-  /* background: linear-gradient(to left, #333, #333 20%, rgb(111, 107, 107) 50%, rgb(181, 178, 178) 90%); */
   background-image: url(assets/backgrounds/space-2.jpeg);
   border-bottom: 0.5em solid rgba(47, 128, 179, 0.699)
 }
@@ -28,42 +24,40 @@ main {
   justify-content: center;
   height: 100%;
   border-top: 2px solid rgb(24, 40, 40, 0.5);
-  /* width: 100vw; */
-  /* width: 100%; */
   background: linear-gradient(to right, rgba(38, 37, 25, 0.763) 1%, rgb(33, 32, 32) 15%, rgb(60, 67, 96) 40%, rgb(73, 98, 152) 60%, rgb(45, 176, 245, 0.8) 90%);
-  /* background-image: url(assets/space-2.jpeg); */
-  /* background-repeat: no-repeat; */
 }
 
 select {
-  margin-left: 5%;
-  /* margin-right: 0; */
-  width: 1.5vw;
-  height: 1.5vw;
+  margin-left: 3%;
+  width: 1.10vw;
+  height: 1.25vw;
+  justify-content: center;
+  background-color:rgba(73, 98, 152, 0);
+  border: none;
+  color:rgb(69, 114, 211);
 }
 
+/** header **/
+
 .username-menu {
-  width: 16vw;
-  height: 2vw;
+  width: 15vw;
+  height: 1.75vw;
   max-height: 20%;
   justify-self: flex-end;
-  align-self: center;
-  /* margin: 1% 1% 0 0; */
+  align-self: flex-start;
   padding: 0.4% 0 1% 1.25%;
-  font-size: 1.2vw;
+  margin-top: 1%;
+  font-size: 1vw;
   color: #ffffffa1;
-  background-color:rgba(73, 98, 152, 0.726)
+  background-color:rgba(73, 98, 152, 0);
 }
 
 .nav-bar {
-  /* display: grid;
-  grid-template-columns: 50% 50%; */
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  /* margin: 2% 1% 2% 0; */
   padding-bottom: 2%;
 }
 
@@ -92,12 +86,15 @@ select {
   cursor: pointer;
 }
 
+.active {
+  color: #ffffff;
+}
+
 i {
   margin-right: 5%;
 }
 
 .nav-bar-logo {
-  /* background-image: url(assets/sword-logo-2.png); */
   display: flex;
   flex-flow: row nowrap;
   justify-self: flex-end;
@@ -105,13 +102,11 @@ i {
   max-width: 30vw;
   max-height: 100%;
   padding-right: 1vw;
-  /* font-size: 2em; */
+  margin-right: 1vw;
 }
 
 .logo-text {
-  /* width: 50%; */
   height: 100%;
-  /* max-height: 20em; */
   max-width: 50%;
   justify-self: flex-start;
   align-self: flex-end;
@@ -119,14 +114,14 @@ i {
 }
 
 .logo-image {
-  /* width: 50%; */
   height: 80%;
   max-width: 50%;
   max-height: 12vw;
   justify-self: flex-start;
   align-self: flex-end; 
-  /* margin: 0 2em 0 0; */
 }
+
+/** box grid **/
 
 .main-wrapper {
   display: flex;
@@ -145,7 +140,7 @@ i {
   font-weight: bold;
   font-family: 'Alex Brush',
   cursive;
-  color: #40fe2b91;
+  color: #40fe2bb3;
 }
 
 .box-grid {
@@ -160,11 +155,14 @@ i {
   margin-bottom: 2%;
 }
 
+/** box + components **/
+
+
 .box {
   display: flex;
   flex-direction: column;
   width: 23vw;
-  height: 33vw;
+  height: 35vw;
   border-radius: 3px;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
   0.3em 0.3em 0.3em 0.1em rgba(0, 0, 0, 0.2),
@@ -211,18 +209,16 @@ i {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* margin: 0; */
   font-size: 1vw;
-  color: #ffffffa1;
+  color: #ffffffd6;
 }
 
 .plays-num {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* margin: 0; */
   font-size: 3vw;
-  color: #d6deefe0;
+  color: #f8fafec3;
 }
 
 .album-header {
@@ -231,7 +227,7 @@ i {
 
 .album-title {
   font-size: 1.5vw;
-  color:rgba(0, 0, 0, 0.76);
+  color:rgba(0, 0, 0, 0.873);
   margin-bottom: 0.5vw;
 }
 
@@ -255,9 +251,10 @@ i {
   justify-content: center;
 }
 
-.date-title {
+.title {
   font-size: 1vw;
   margin-bottom: 0.25vw;
+  color: rgba(0, 0, 0, 0.893)
 }
 
 .date-num {
@@ -269,20 +266,12 @@ i {
   justify-content: center;
 }
 
-.listeners-title {
-  font-size: 1vw;
-  margin-bottom: 0.25vw;
-}
-
 .listeners-num {
-  font-size: 2vw;
-  color: rgba(54, 113, 201, 0.804)
+  font-size: 2.25vw;
+  color: rgba(38, 122, 248, 0.685)
 }
 
-.active {
-  /* color: #3ee668d6; */
-  color: #ffffff;
-}
+/** box backgrounds **/
 
 .album-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
