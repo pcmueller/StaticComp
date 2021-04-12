@@ -2,7 +2,7 @@
 
 [Deployed Page](https://pcmueller.github.io/static-comp/)
 
-A challenge to recreate the layout and responsiveness of a website based on a single screenshot.
+A challenge to recreate the layout and responsiveness of a website based on a single "comp" screenshot.
 
 
 ## Abstract
